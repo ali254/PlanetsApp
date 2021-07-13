@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetApp", "PlanetApp\PlanetApp.csproj", "{81A10369-8BEF-406A-9A88-B9E13E5C4CA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{885911AF-6A05-4B65-B92F-536F92E9DE8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{D9873E4E-1AFC-4347-B0EF-F47674274ADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Planet", "Data\Data.Planet\Data.Planet.csproj", "{36F8176F-1284-4323-B595-2A7BE9DED580}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81A10369-8BEF-406A-9A88-B9E13E5C4CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A10369-8BEF-406A-9A88-B9E13E5C4CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81A10369-8BEF-406A-9A88-B9E13E5C4CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81A10369-8BEF-406A-9A88-B9E13E5C4CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F8176F-1284-4323-B595-2A7BE9DED580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F8176F-1284-4323-B595-2A7BE9DED580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F8176F-1284-4323-B595-2A7BE9DED580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F8176F-1284-4323-B595-2A7BE9DED580}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{36F8176F-1284-4323-B595-2A7BE9DED580} = {D9873E4E-1AFC-4347-B0EF-F47674274ADB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE5077D7-8734-45EC-8C2F-AB3E7DE69C6B}
+	EndGlobalSection
+EndGlobal
