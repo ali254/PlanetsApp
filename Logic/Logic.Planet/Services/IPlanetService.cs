@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data.Planet
+namespace Logic.Planet.Services
 {
-    public class Class1
+    public interface IPlanetService
     {
+
     }
 }
