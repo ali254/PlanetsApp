@@ -5,7 +5,10 @@ namespace PlanetApp.App_Start
 {
     using System;
     using System.Web;
+    using System.Web.Http;
+    using System.Web.Http.Dependencies;
     using Infrastructure.Planet;
+    using Ninject.Web.WebApi;
     using Infrastructure.Planet.DbContext;
     using Logic.Planet;
     using Logic.Planet.Services;
@@ -13,6 +16,8 @@ namespace PlanetApp.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
+    using Ninject.Web.Common.WebHost;
+    using Ninject.Web.Mvc;
 
     public static class NinjectWebCommon 
     {
@@ -47,7 +52,7 @@ namespace PlanetApp.App_Start
             {
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
                 kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
-
+                GlobalConfiguration.Configuration.DependencyResolver = new Ninject.Web.WebApi.NinjectDependencyResolver(kernel);
                 RegisterServices(kernel);
                 return kernel;
             }
