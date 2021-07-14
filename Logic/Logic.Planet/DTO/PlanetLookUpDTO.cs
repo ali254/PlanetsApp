@@ -9,6 +9,6 @@ namespace Logic.Planet.DTO
 {
     public class PlanetLookUpDTO : BaseDTOLookUp
     {
-        public string ImageName { get; set; }
+
     }
 }

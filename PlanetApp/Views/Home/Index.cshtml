@@ -1,24 +1,51 @@
 ﻿<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>Planets</h1>
+    <p class="lead">Click on any Planet Below to see more information.</p>
 </div>
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
-        a broad range of clients, including browsers and mobile devices. ASP.NET Web API
-        is an ideal platform for building RESTful applications on the .NET Framework.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+    <div class="col-md-6 col-md-offset-3">
+        <ul class="list-group" id="planetList">
+        </ul>
+
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
+
+
+</div>
+
+
+<div class="modal fade" id="planetModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="planetTitle"> </h4>
+            </div>
+            <div class="modal-body" style="padding-top: 0px;">
+                <div class="row" style="margin-bottom: 15px;">
+                    <img class="img-fluid img-responsive" src="" alt="image" id="planetImage">
+                </div>
+                <div class="row">
+                    <label class="col-sm-6">Distance from Sun (km)</label>
+                    <p class="col-sm-6" id="planetDistanceFromSun"></p>
+
+                </div>
+                <div class="row">
+                    <label class="col-sm-6">Mass (kg)</label>
+                    <p class="col-sm-6" id="planetMass"></p>
+
+                </div>
+                <div class="row">
+                    <label class="col-sm-6">Diameter (km)</label>
+                    <p class="col-sm-6" id="planetDiameter"></p>
+
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
+
+
+
