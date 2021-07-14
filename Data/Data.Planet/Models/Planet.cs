@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Constants;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -13,13 +14,15 @@ namespace Data.Planet.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid PK { get; set; }
+
+        [Required]
+        [MaxLength(255)]
+        [Index(DbIndexNames.UniquePlanetName, IsUnique = true)]
         public string Name { get; set; }
         public string ImageName { get; set; }
-
         public double Mass { get; set; }
-
         public double Diameter { get; set; }
-        public int DistanceFromSun { get; set; }
+        public double DistanceFromSun { get; set; }
 
 
 

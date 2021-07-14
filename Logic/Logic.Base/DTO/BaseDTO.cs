@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infrastructure.Planet
+namespace Logic.Base.DTO
 {
-    public class Class1
+    public abstract class BaseDTO
     {
+        public Guid PK { get; set; }
     }
 }

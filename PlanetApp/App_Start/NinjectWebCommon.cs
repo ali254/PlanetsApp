@@ -5,6 +5,9 @@ namespace PlanetApp.App_Start
 {
     using System;
     using System.Web;
+    using Infrastructure.Planet;
+    using Infrastructure.Planet.DbContext;
+    using Logic.Planet;
     using Logic.Planet.Services;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
@@ -20,7 +23,7 @@ namespace PlanetApp.App_Start
         /// </summary>
         public static void Start() 
         {
-            DynamicModuleUtility.RegisterModule(typeof(OnePerRequestHttpModule));
+            DynamicModuleUtility.RegisterModule(typeof(OnePerRequestHttpModule)); 
             DynamicModuleUtility.RegisterModule(typeof(NinjectHttpModule));
             bootstrapper.Initialize(CreateKernel);
         }
@@ -61,7 +64,10 @@ namespace PlanetApp.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<IPlanetService>().To<PlanetService>();
-        }        
+            kernel.Load<PlanetInfrastructureDI>();
+            kernel.Load<PlanetLogicDI>();
+            kernel.Load<AutoMapperModule>();
+
+        }
     }
 }

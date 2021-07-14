@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Logic.Planet.DataModels
+namespace Logic.Planet.DTO
 {
-    public class PlanetDataModel
+    public class PlanetDetailedDTO : PlanetLookUpDTO
     {
-        public string Name { get; set; }
-        public string ImageName { get; set; }
         public double Mass { get; set; }
         public double Diameter { get; set; }
-        public int DistanceFromSun { get; set; }
+        public double DistanceFromSun { get; set; }
     }
 }

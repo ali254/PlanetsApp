@@ -1,4 +1,5 @@
-﻿using Logic.Planet.Services;
+﻿using Infrastructure.Planet.DbContext;
+using Logic.Planet.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace PlanetApp.Controllers
         public HomeController(IPlanetService planetService)
         {
             this.planetService = planetService;
+            
         }
 
         public ActionResult Index()
