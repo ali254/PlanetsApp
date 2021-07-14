@@ -16,6 +16,7 @@ textarea {
     max-width: 280px;
 }
 
+/*increase default size of these elements*/
 a, p, label {
     font-size: 1.2em;
 }

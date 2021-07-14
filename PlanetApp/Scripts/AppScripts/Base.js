@@ -8,7 +8,7 @@
     
 });
 
-
+//update dom with list of planets 
 function PopulateDOM(planetList) {
     var planetList_DOM = $('#planetList');
     planetList.forEach(planet => {
@@ -24,6 +24,8 @@ function PopulateDOM(planetList) {
 
 }
 
+
+//update modal by ajax loading clicked item's info 
 function UpdateModal(planetPK) {
 
     $('#planetModal').modal('show');
