@@ -33,5 +33,7 @@ namespace PlanetApp.Controllers
         {
             return this.planetService.GetDetailed(pk);
         }
+
+
     }
 }

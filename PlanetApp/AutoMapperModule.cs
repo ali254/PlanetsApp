@@ -28,7 +28,9 @@ namespace PlanetApp
         {
             return new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<PlanetEntity, PlanetDetailedDTO>();
+                cfg.CreateMap<PlanetEntity, PlanetDetailedDTO>()
+                    .ForMember(x => x.PlanetImageName, y => y.MapFrom(z => z.PlanetImage.Name));
+
                 cfg.CreateMap<PlanetEntity, PlanetLookUpDTO>();
             });
 

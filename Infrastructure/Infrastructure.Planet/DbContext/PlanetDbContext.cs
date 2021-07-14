@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.Planet.Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace Infrastructure.Planet.DbContext
         }
 
         public DbSet<PlanetEntity> Planets { get; set; }
+        public DbSet<PlanetImage> PlanetImages { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

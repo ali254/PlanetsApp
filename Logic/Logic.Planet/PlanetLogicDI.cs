@@ -13,6 +13,7 @@ namespace Logic.Planet
         public override void Load()
         {
             Bind<IPlanetService>().To<PlanetService>();
+            Bind<IPlanetImageService>().To<PlanetImageService>();
         }
     }
 }

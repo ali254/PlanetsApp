@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Planet.cs" />
+    <Compile Include="Models\PlanetImage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,6 +63,10 @@
     <ProjectReference Include="..\..\Constants\Constants.csproj">
       <Project>{EA0E242F-DB21-4F65-ABF6-675E0D35D572}</Project>
       <Name>Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data.Base\Data.Base.csproj">
+      <Project>{728EB44F-E8CC-4865-994B-C917A451262E}</Project>
+      <Name>Data.Base</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

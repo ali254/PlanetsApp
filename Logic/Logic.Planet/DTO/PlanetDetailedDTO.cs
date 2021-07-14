@@ -11,5 +11,7 @@ namespace Logic.Planet.DTO
         public double Mass { get; set; }
         public double Diameter { get; set; }
         public double DistanceFromSun { get; set; }
+        public Guid PlanetImagePK { get; set; }
+        public string PlanetImageName { get; set; }
     }
 }

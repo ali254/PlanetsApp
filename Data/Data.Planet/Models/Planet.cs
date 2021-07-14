@@ -1,4 +1,5 @@
 ﻿using Constants;
+using Data.Base.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -9,17 +10,14 @@ using System.Threading.Tasks;
 
 namespace Data.Planet.Models
 {
-    public class Planet
+    public class Planet : BaseModel
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid PK { get; set; }
-
         [Required]
         [MaxLength(255)]
         [Index(DbIndexNames.UniquePlanetName, IsUnique = true)]
         public string Name { get; set; }
-        public string ImageName { get; set; }
+        public virtual PlanetImage PlanetImage { get; set; }
+        public Guid PlanetImagePK { get; set; }
         public double Mass { get; set; }
         public double Diameter { get; set; }
         public double DistanceFromSun { get; set; }

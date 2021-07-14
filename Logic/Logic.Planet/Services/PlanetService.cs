@@ -23,23 +23,6 @@ namespace Logic.Planet.Services
         private PlanetDetailedDTO GetDetailedDTO(PlanetEntity entity)
         {
             return entity != null ? mapper.Map<PlanetDetailedDTO>(entity) : null;
-
-            //if (planetEntity != null)
-            //{
-            //    return new PlanetDetailedDTO()
-            //    {
-            //        PK = planetEntity.PK,
-            //        Name = planetEntity.Name,
-            //        DistanceFromSun = planetEntity.DistanceFromSun,
-            //        Diameter = planetEntity.Diameter,
-            //        ImageName = planetEntity.ImageName,
-            //        Mass = planetEntity.Mass
-            //    };
-            //}
-            //else
-            //{
-            //    return null;
-            //}
         }
 
 
