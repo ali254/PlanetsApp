@@ -10,13 +10,6 @@ namespace PlanetApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IPlanetService planetService;
-        public HomeController(IPlanetService planetService)
-        {
-            this.planetService = planetService;
-            
-        }
-
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";

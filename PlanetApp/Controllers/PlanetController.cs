@@ -1,4 +1,5 @@
-﻿using Logic.Planet.Services;
+﻿using Logic.Planet.DTO;
+using Logic.Planet.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,7 @@ using System.Web.Http;
 
 namespace PlanetApp.Controllers
 {
+    [RoutePrefix("api/Planet")]
     public class PlanetController : ApiController
     {
         private readonly IPlanetService planetService;
@@ -18,17 +20,18 @@ namespace PlanetApp.Controllers
 
         // GET: api/Planet
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<PlanetLookUpDTO> Get()
         {
-            return new string[] { "value1", "value2" };
+            return this.planetService.Get();
         }
 
 
-        // GET: api/Planet/5
+        // GET: api/Planet/<Guid>
         [HttpGet]
-        public string Get(int id)
+        [Route("{pk}")]
+        public PlanetDetailedDTO Get(Guid pk)
         {
-            return "value";
+            return this.planetService.GetDetailed(pk);
         }
     }
 }

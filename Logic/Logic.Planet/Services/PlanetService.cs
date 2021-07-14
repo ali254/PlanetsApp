@@ -62,6 +62,7 @@ namespace Logic.Planet.Services
 
         public PlanetDetailedDTO GetDetailed(string Name)
         {
+
             var planetEntity = this.planetDbContext.Planets
                 .SingleOrDefault(p => p.Name.Equals(Name, StringComparison.OrdinalIgnoreCase));
 
