@@ -16,8 +16,8 @@ namespace Infrastructure.Planet.DbContext
         {
         }
 
-        public DbSet<PlanetEntity> Planets { get; set; }
-        public DbSet<PlanetImage> PlanetImages { get; set; }
+        public virtual DbSet<PlanetEntity> Planets { get; set; }
+        public virtual DbSet<PlanetImage> PlanetImages { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

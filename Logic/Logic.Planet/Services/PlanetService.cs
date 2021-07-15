@@ -28,17 +28,8 @@ namespace Logic.Planet.Services
 
         public PlanetLookUpDTO[] Get() 
         {
-
             return mapper.ProjectTo<PlanetLookUpDTO>(this.planetDbContext.Planets)
                 .OrderBy(p => p.Name).ToArray();
-
-            //return this.planetDbContext.Planets.Select(p => new PlanetLookUpDTO() 
-            //{
-            //    PK = p.PK,
-            //    Name = p.Name,
-            //}).OrderBy(p => p.Name).ToArray();
-
-            
         }
 
         

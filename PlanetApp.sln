@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic.Base", "Logic\Logic.B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Base", "Data\Data.Base\Data.Base.csproj", "{728EB44F-E8CC-4865-994B-C917A451262E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{F9C08DD3-9D08-4185-BAED-32E3A3973285}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetApp.Test", "Test\PlanetApp.Test\PlanetApp.Test.csproj", "{5D42087E-E719-4816-BEDC-C340182C5FCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,10 @@ Global
 		{728EB44F-E8CC-4865-994B-C917A451262E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{728EB44F-E8CC-4865-994B-C917A451262E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{728EB44F-E8CC-4865-994B-C917A451262E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D42087E-E719-4816-BEDC-C340182C5FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D42087E-E719-4816-BEDC-C340182C5FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D42087E-E719-4816-BEDC-C340182C5FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D42087E-E719-4816-BEDC-C340182C5FCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +75,7 @@ Global
 		{F52A66C6-767B-4A4F-937A-49DF483FE79A} = {5C55EC56-19DE-4680-A366-F329A28FBD7A}
 		{AB31F0FC-4FC7-49DE-9228-E320DBE00291} = {885911AF-6A05-4B65-B92F-536F92E9DE8C}
 		{728EB44F-E8CC-4865-994B-C917A451262E} = {D9873E4E-1AFC-4347-B0EF-F47674274ADB}
+		{5D42087E-E719-4816-BEDC-C340182C5FCF} = {F9C08DD3-9D08-4185-BAED-32E3A3973285}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AE5077D7-8734-45EC-8C2F-AB3E7DE69C6B}
