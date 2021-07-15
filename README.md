@@ -1,5 +1,10 @@
 # PlanetsApp
 
+Simple application to load and show planets.
+
+The goal is to demonstrate software design practices.
+
+
 
 
 This project requires a SQL server instance for data access.
