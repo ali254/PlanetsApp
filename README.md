@@ -9,7 +9,7 @@ The goal is to demonstrate software design practices.
 
 This project requires a SQL server instance for data access.
 
-To Run:
+## To Run:
 Install SQL server instance.
 Update PlanetApp\Web.Config:
 
